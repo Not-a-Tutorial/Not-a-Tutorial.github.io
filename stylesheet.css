@@ -1,6 +1,9 @@
 body {
-  font-family: 'Arial'
+  font-family: 'Arial';
+  background-color: #F7F0DF; /!-- https://www.color-name.com/ivory-paper.color --/
+  padding: 20px;
 }
+
 h1 {
   font-family: 'Courier New', monospace; 
   text-transform: lowercase;
@@ -10,6 +13,6 @@ h2 {
   text-transform: lowercase;
 }
 mark {
-  background: blue!important; 
+  background: RGBA(0, 0, 255, 0.5) !important; 
   color:white;
 }
