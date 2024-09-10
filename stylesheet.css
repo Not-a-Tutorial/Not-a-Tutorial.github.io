@@ -1,7 +1,13 @@
 body {
   font-family: 'Arial';
-  background-color: #F7F0DF; <!-- https://www.color-name.com/ivory-paper.color -->
+  background-color: #F7F0DF;
+  <!-- https://www.color-name.com/ivory-paper.color -->
   padding: 20px;
+  height: 100vh;
+  margin: 0;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
 }
 
 h1 {
