@@ -1,5 +1,9 @@
 body {
   font-family: 'Arial';
+  background-image: url(/photos/Wood.jpg);
+}
+
+.paper{
   background-color: #E8E9E1; /* www.colorxs.com/color/paper-doll-csp-485 */
   padding: 20px;
   height: 100vh;
