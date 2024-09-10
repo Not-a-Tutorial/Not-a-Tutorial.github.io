@@ -22,6 +22,7 @@ h2 {
   text-transform: lowercase;
 }
 mark {
-  background: RGBA(0, 0, 255, 0.5) !important; 
-  color:white;
+  /*background: RGBA(0, 0, 255, 0.5) !important; */
+  background: #FFDE64 !important;
+  /*color:white;*/
 }
