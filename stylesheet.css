@@ -27,3 +27,25 @@ mark {
   background: #FFDE64 !important;
   /*color:white;*/
 }
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
