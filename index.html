@@ -21,12 +21,17 @@
       
         <section>
           <h2>Blog Posts</h2>
-          <ol>
-            <li><a href="/blogposts/post3.html">Photo Session in Philly | Post #3</a></li>
-            <li><a href="/blogposts/post2-5.html">Testing Image Uploads | Post #2.5</a></li>
-            <li><a href="/blogposts/post2.html">Starting Off with CSS | Post #2</a></li>
-            <li><a href="/blogposts/post1.html">Starting Off with HTML | Post #1</a></li>
-          </ol>
+          <div>
+            <button onclick="filterItems('all')">Show All</button>
+            <button onclick="filterItems('photo')">Photography</button>
+            <button onclick="filterItems('code')">Coding</button>
+          </div>
+          <ul>
+            <li class="item photo"><a href="/blogposts/post3.html">Photo Session in Philly | Post #3</a></li>
+            <li class="item code"><a href="/blogposts/post2-5.html">Testing Image Uploads | Post #2.5</a></li>
+            <li class="item code"><a href="/blogposts/post2.html">Starting Off with CSS | Post #2</a></li>
+            <li class="item code"><a href="/blogposts/post1.html">Starting Off with HTML | Post #1</a></li>
+          </ul>
         </section>
         </main>
         <div id="footer-placeholder"></div>
