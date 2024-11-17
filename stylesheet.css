@@ -5,6 +5,10 @@ body {
   padding: 20px;
 }
 
+.hidden{
+  display: none;
+}
+
 .paper{
   background-color: #E8E9E1; /* www.colorxs.com/color/paper-doll-csp-485 */
   padding: 20px;
