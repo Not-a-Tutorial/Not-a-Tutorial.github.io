@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>
+      a small blog
+      </title>
+    <link href="../stylesheet.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="paper">
+     <div id="header-placeholder"></div>
+       <main>  
+         <section>
+           <h1>Separating Home Directory from OS Files</h1>
+           <h2>Feb. 1, 2025</h2>
+             <article>
+               <h3>"ChatGPT, tell me some terminal commands..."</h3>
+               <p>Recently, I transitioned away from Windows and started using a Linux system running Ubuntu. Against the advice of every tutorial on the internet, I started messing around with config files in the terminal without knowing what they did. This was primarily in an effort to get graphics card drivers installed.</p>
+               <p>During the corruption(?) of my operating system, my files were locked on my confused, sad <a target="_blank" href="https://frame.work/products/laptop13-diy-intel-ultra-1">Framework 13 laptop</a>. I saved some cash when I purchased the laptop by not purchasing extra storage, but this meant my OS was stored on the same physical drive as my home directory. Thankfully, removing my SSD and accessing it as an external drive on my old computer allowed me to recover my files.</p>
+               <p>While working through this hell of my own making, I realized it would benifit me to install the OS on a separate drive and try to keep my home directory segregated. This required me to crank open the old wallet and get a <a target="_blank" href="https://frame.work/products/storage-expansion-card-2nd-gen">Framework expansion card</a>. Waiting for the card to be delivered, I started reading.</p>
+               <h3>Actual Research</h3>
+               <p>Thankfully, there was a <a target ="_blank" href="https://thenewstack.io/linux-migrate-the-home-directory-to-another-drive/">blog post</a> by Jack Wallen on exactly what I was trying to do. The Framework was able to see the expansion card as its own drive, so I could make sure that the home directory was stored there.</p> 
+               <p>It's worth noting that I do use a NAS for files I don't plan on using immediately, but this leaves this vulnerability vector for files that I want to use locally on the laptop, but that I haven't backed up to the NAS yet. Could I set up a back up protocol? Probably, but that's for another day to figure out.</p>
+               <h3>Execution and Future Goals</h3>
+               <p>I used Obsidian to recreate Jack's blog post in my own voice with easy-to-copy command lines for myself to follow. Sure enough, it wasn't long before I cracked my OS again trying to set up Discord screenshare (again, that's for another day). But now, I was able to grab a USB boot drive, reinstall the Ubuntu OS while formatting the drive, and re-point to my home directory. Once the directory was registered, it was like I never left! Desktop and other folders populated with the files from the external drive while the OS was unmolested by my awful coding.</p>
+               <p>Great success, but I couldn't help but feel it could be better. First of all, pointing to the home directory is just single bash commands. I would love to make a bash script that I can run to set the home directory in one run line. Similarly, programs are installed at the main directory instead of home, so reinstalling my OS will also remove all programs. A simpler bash script could be installing all of my standard programs. Those are the kinds of goals I want to set; achievable but challenging.</p>
+             </article>
+         </section>
+       </main>
+      <div id="footer-placeholder"></div>
+    </div>
+    <script src="../header.js"></script>
+  </body>
+</html>
