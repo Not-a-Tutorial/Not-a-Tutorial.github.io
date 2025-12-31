@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>
+      a small blog
+      </title>
+    <link href="../stylesheet.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="paper">
+     <div id="header-placeholder"></div>
+       <main>  
+         <section>
+           <h1>Separating Home Directory from OS Files</h1>
+           <h2>Dec. 31, 2025</h2>
+             <article>
+               <h3>"ChatGPT, tell me some terminal commands..."</h3>
+               <p>Recently, I transitioned away from Windows and started using a Linux system running Ubuntu. Against the advice of every tutorial on the internet, I started messing around with config files in the terminal without knowing what they did. This was primarily in an effort to get graphics card drivers installed.</p>
+               <p>During the corruption(?) of my operating system, my files were locked on my confused, sad <a target="_blank" href="https://frame.work/products/laptop13-diy-intel-ultra-1">Framework 13 laptop</a>. I saved some cash when I purchased the laptop by not purchasing extra storage, but this meant my OS was stored on the same physical drive as my home directory. Thankfully, removing my SSD and accessing it as an external drive on my old computer allowed me to recover my files.</p>
+               <p>While working through this hell of my own making, I realized it would benefit me to install the OS on a separate drive and try to keep my home directory segregated. This required me to crank open the old wallet and get a <a target="_blank" href="https://frame.work/products/storage-expansion-card-2nd-gen">Framework expansion card</a>. Waiting for the card to be delivered, I started reading.</p>
+               <h3>Actual Research</h3>
+               <p>Thankfully, there was a <a target ="_blank" href="https://thenewstack.io/linux-migrate-the-home-directory-to-another-drive/">blog post</a> by Jack Wallen on exactly what I was trying to do. The Framework was able to see the expansion card as its own drive, so I could make sure that the home directory was stored there.</p> 
+               <p>It's worth noting that I do use a NAS for files I don't plan on using immediately, but this leaves this vulnerability vector for files that I want to use locally on the laptop, but that I haven't backed up to the NAS yet. Could I set up a back up protocol? Probably, but that's for another day to figure out.</p>
+               <h3>Execution and Future Goals</h3>
+               <p>I used Obsidian to recreate Jack's blog post in my own voice with easy-to-copy command lines for myself to follow. Sure enough, it wasn't long before I cracked my OS again trying to set up Discord screenshare (again, that's for another day). But now, I was able to grab a USB boot drive, reinstall the Ubuntu OS while formatting the drive, and re-point to my home directory. Once the directory was registered, it was like I never left! Desktop and other folders populated with the files from the external drive while the OS was unmolested by my awful coding.</p>
+               <p>Great success, but I couldn't help but feel it could be better. Programs are normally installed at the main directory instead of home, so reinstalling my OS will also remove all programs. So, I’ve been keeping track of the programs I use most often and creating a bash script that will reinstall all of them once run. In the future, I’d love to have the home directory reassignment done in a script as well, but I’m concerned that I won’t be able to easily identify the correct drive.</p>
+               <p>For now, I’m going to add my own outline to this GitHub not only to share, but so when I inevitably jack-up my OS again, I will have a web version of my instructions for myself.</p>
+               <h3>It Happened Again</h3>
+               <p>I originally drafted this a few months ago, but life got in the way leaving it incomplete in my hobby box. UNTIL I DID IT AGAIN. This time it was due to a log overflow due to a DVD read error while I was using MakeMKV to make a JellyFin server. Somehow, my drive started flooding my log with literal gigabytes of single-line errors. Went to the ol’ tride-and-true ChatGPT, and it gave—what seemed like—reasonable instructions on how to clear the logs. <i>Nope!</i> In a twist no one could have seen coming, it bricked my computer. From what I could tell from the BIOS errors, gnome GUI was crashing on start-up. My guess? I completely nuked the log folders instead of clearing them, and, when gnome went looking for the file, it realized it was gone and decided the only solution was to become masonry.</p>
+               <p>The saving grace was that the process I outlined here worked. Using a spare USB boot drive, I updated the OS to the latest version of Ubuntu, redefined my home directory to bring over all my old files, and reinstalled all the programs I actually use.</p>
+               <p>All of this makes me think about the utility of LLM coding assistance. I’d have to say that chats have helped me draft code for some of the projects I’ve made here. However, by the time I actually have a running program, the amount that the LLM generated is minimal as I’ve rewritten it. So what did I gain over just reading tutorials or documentation? And what about this nonsense? If I need help with highly specific, OS-level issues, advice that’s incorrect has the possibility to nuke my computer. Fixing the issues are making me a better user, but I’d hardly say the “practice” is worth the stress of destroying a device that I depend on for so much of my life.</p>
+             </article>
+         </section>
+       </main>
+      <div id="footer-placeholder"></div>
+    </div>
+    <script src="../header.js"></script>
+  </body>
+</html>
