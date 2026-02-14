@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      a small blog
+    </title>
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <div class="paper">
+      <div id="header-placeholder"></div>
+      <main>  
+        <section>
+          <h1>A Small Blog</h1>
+          <h2>to Share a Few Hobbies</h2>
+          <p>Plenty of websites let people share things about themselves, but I decided to go solo. The site is also going to be a test of my ability to do front-end web design again. I was inspired by a lot of the personal web folks on YouTube; thanks to those creators for helping me take the plunge.</p>
+          <p>So, let me share a few things that I like to do. Navigation at the top of the page should take you to posts on some of my interests.</p>
+        </section>
+      
+        <section>
+          <h2>Blog Posts</h2>
+          <div>
+            <button onclick="filterItems('all')">Show All</button>
+            <!--<button onclick="filterItems('photo')">Photography</button>-->
+            <button onclick="filterItems('code')">Coding</button>
+            <button onclick="filterItems('other')">Other</button>
+          </div>
+          <ul id="url-list">
+            <li class="item code"><a href="/blogposts/post5.html">Simulating Bingo Game Length #SoME4 2025 | Post #5</a></li> 
+            <li class="item code"><a href="/blogposts/post2-5.html">Testing Image Uploads | Post #2.5</a></li>
+            <li class="item code"><a href="/blogposts/post2.html">Starting Off with CSS | Post #2</a></li>
+            <li class="item code"><a href="/blogposts/post1.html">Starting Off with HTML | Post #1</a></li>
+          </ul>
+        </section>
+        </main>
+        <div id="footer-placeholder"></div>
+      </div>
+      <script src="header.js"></script>
+      <script src="blog.js"></script>
+    </body>
+</html>

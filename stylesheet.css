@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial';
+  background-image: url(/photos/Wood.jpg);
+  margin: 0px;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden{
+  display: none;
+}
+
+.paper{
+  background-color: #E8E9E1; /* www.colorxs.com/color/paper-doll-csp-485 */
+  padding: 20px;
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 700px;
+  min-width: 500px;
+}
+
+h1 {
+  font-family: 'Courier New', monospace; 
+  text-transform: lowercase;
+}
+h2 {
+  font-family: 'Courier New', monospace; 
+  text-transform: lowercase;
+}
+mark {
+  /*background: RGBA(0, 0, 255, 0.5) !important; */
+  background: #FFDE64 !important;
+  /*color:white;*/
+}
+
+nav {
+  width: 90%;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
